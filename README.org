@@ -4,7 +4,11 @@ Convert in orgmode syntax, a YouTube video in image with link.
 ** Install
 
 #+BEGIN_SRC bash
-sudo wget https://raw.githubusercontent.com/uGeek/youtube2org/master/youtube2org /usr/bin/youtube2org
+sudo wget -O /usr/bin/youtube2org https://raw.githubusercontent.com/uGeek/youtube2org/master/youtube2org
+#+END_SRC
+
+#+BEGIN_SRC 
+sudo chmod +x youtube2org
 #+END_SRC
 
 ** example:
