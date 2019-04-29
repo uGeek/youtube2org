@@ -1,0 +1,18 @@
+* Youtube2org
+Convert in orgmode syntax, a YouTube video in image with link.
+
+** example:
+
+#+BEGIN_SRC bash
+youtube2org https://www.youtube.com/watch?v=NxYITudzHlc 
+#+END_SRC
+
+#+BEGIN_SRC orgmode
+[[https://www.youtube.com/watch?v=NxYITudzHlc][http://img.youtube.com/vi/NxYITudzHlc/0.jpg]]
+#+END_SRC
+
+
+
+** Result:
+
+[[https://www.youtube.com/watch?v=NxYITudzHlc][http://img.youtube.com/vi/NxYITudzHlc/0.jpg]]
