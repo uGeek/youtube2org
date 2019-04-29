@@ -8,7 +8,7 @@ sudo wget -O /usr/bin/youtube2org https://raw.githubusercontent.com/uGeek/youtub
 #+END_SRC
 
 #+BEGIN_SRC 
-sudo chmod +x youtube2org
+sudo chmod +x /usr/bin/youtube2org
 #+END_SRC
 
 ** example:
