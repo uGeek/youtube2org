@@ -11,7 +11,7 @@ sudo wget -O /usr/bin/youtube2org https://raw.githubusercontent.com/uGeek/youtub
 sudo chmod +x /usr/bin/youtube2org
 #+END_SRC
 
-** example:
+** example youtube to orgmode:
 
 #+BEGIN_SRC bash
 youtube2org https://www.youtube.com/watch?v=NxYITudzHlc 
@@ -21,7 +21,15 @@ youtube2org https://www.youtube.com/watch?v=NxYITudzHlc
 [[https://www.youtube.com/watch?v=NxYITudzHlc][http://img.youtube.com/vi/NxYITudzHlc/0.jpg]]
 #+END_SRC
 
+** example youtube to Markdown:
 
+#+BEGIN_SRC bash
+youtube2org -m https://www.youtube.com/watch?v=NxYITudzHlc 
+#+END_SRC
+
+#+BEGIN_SRC bash
+[![](http://img.youtube.com/vi/NxYITudzHlc/0.jpg)](https://www.youtube.com/watch?v=NxYITudzHlc "")
+#+END_SRC
 
 ** Result:
 
