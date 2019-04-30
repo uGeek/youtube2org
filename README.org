@@ -1,5 +1,5 @@
 * Youtube2org
-Convert in orgmode syntax, a YouTube video in image with link.
+Convert in orgmode and Markdown syntax, a YouTube video in image with link.
 
 ** Install
 
