@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# <youtube2org. Convert in orgmode syntax, a YouTube video in image with link>
+#  youtube2org. Convert in orgmode and Markdown syntax, a YouTube video in image with link
 #
 # Copyright (C) 2019 Angel. uGeek
 # ugeekpodcast@gmail.com
@@ -21,6 +21,30 @@
 #
 #
 
-IMAGE=$(echo $1 | cut -d "=" -f2 | cut -d "&" -f1)
 
+if [ $1 = "-h" ]
+then
+echo "
+youtube2org
+
+Convert video from youtube in url orgmode
+example:  youtube2org [youtube_url]  
+
+Convert video from youtube in url Markdown
+example:  youtube2org -m [youtube_url]  
+
+
+More info:
+https://github.com/uGeek/youtube2org
+"
+else  
+if [ $1 = "-m" ]
+then
+IMAGE=$(echo $2 | cut -d "=" -f2 | cut -d "&" -f1)
+echo '[![](http://img.youtube.com/vi/'$IMAGE'/0.jpg)]('$2' "")'
+else
+IMAGE=$(echo $1 | cut -d "=" -f2 | cut -d "&" -f1)
 echo '[['$1'][http://img.youtube.com/vi/'$IMAGE'/0.jpg]]'
+fi
+fi
+
